@@ -1,0 +1,7 @@
+<p>
+  <select id="select" [(ngModel)]="provinciaSel" (ngModelChange)="avisarProvincia()">    
+    <option *ngFor="let itProvincia of arrayProvincias" 
+      [ngValue]="itProvincia" >
+      {{itProvincia.idPro}} -- {{itProvincia.namePro}}</option>
+  </select>  
+</p>

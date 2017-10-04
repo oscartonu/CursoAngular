@@ -1,0 +1,26 @@
+<p>
+  impresora works!
+</p>
+
+<h2>Seleciona una Impresora</h2>
+<div *ngFor="let impresora of arrayImpresoras">
+  <input  type="radio" id="myRadio"
+    name="printer" [(ngModel)]="impresoraSel" [value]="impresora" 
+    (change)="mostrarFinal()">
+    <label>{{ impresora }}</label>     
+</div>
+
+<h2>Seleción de opciones</h2>
+<input type="checkbox" name="print" id="print" [(ngModel)]="print" [disabled]="!impresoraSel">
+<label for="print">Imprimir resultado</label>
+<input type="checkbox" name="tono" id="tono" [(ngModel)]="isClaro" [disabled]="!impresoraSel">
+<label for="print">Imprimir resultado</label>
+
+<div *ngIf="impresoraSel">
+  <p>Impresora seleccionada: {{impresoraSel}}</p>
+  <p>imprimir: {{print}}</p>
+  <p>En claro: {{isClaro}}</p>
+</div>
+
+
+
