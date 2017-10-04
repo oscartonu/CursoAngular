@@ -1,0 +1,16 @@
+<p>
+  Pensamientos:
+</p>
+<p>
+    <label for="input-name">Añade un Pensamiento</label>
+    <input id="input-name" type="text" [(ngModel)]="pensamiento">
+</p>
+<p>
+  <button (click)="addPensamiento()">Añade un Pensamiento</button>
+</p>
+<div *ngIf="arrayPensamientos.length > 0">
+  <p>Lista de Pensamientos:</p>
+  <ul>
+    <li *ngFor="let itPensamiento of arrayPensamientos">  {{itPensamiento}} </li>
+  </ul>
+</div>

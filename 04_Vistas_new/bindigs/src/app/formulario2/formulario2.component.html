@@ -1,0 +1,15 @@
+<p>
+  <label for="input-name">Escribr tu nombre</label>
+  <input id="input-name" type="text" [(ngModel)]="sName">
+</p>
+<p>
+  Hola {{sName}}. en Mayus {{sName.toUpperCase()}}
+</p>
+<p>
+  <button (click)="btnBorrar()">Borrar</button> 
+</p>
+<p>
+    <button (click)="btnBorrarEvent($event)">Borrar Event</button> 
+</p>
+
+
