@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-padre',
@@ -12,4 +12,7 @@ export class PadreComponent implements OnInit {
   ngOnInit() {
   }
 
+  recibirEvento() {
+    this.sName = '';
+  }
 }

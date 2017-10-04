@@ -3,5 +3,5 @@
     padre works!
   </p>
   <input type="text" [(ngModel)]="sName" placeholder="Escibre nombre del hijo">
-  <app-hijo [usuario]="sName"></app-hijo>
+  <app-hijo [usuario]="sName" (responder)="recibirEvento()"></app-hijo>
 </div>
