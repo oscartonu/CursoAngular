@@ -1,0 +1,14 @@
+GIT del profe: alce65
+CREAR PROYECTO: ('angular cli' es dios)
+· ng new -si 'nombre'
+· simlink copiar el node_modules
+· package.json -> "start": "ng serve --preserve-symlinks"
+· ng g c 'nombre' (generate componens )
+· ng g m 'nombre' (generate module ) -> no se enlaza, solo crea
+· ng g c --flat name/name -> crea componente dentro del modulo sin crear mas carpetas
+***** Diferentes maneras para el enrutamiento
+· ng new routing 'nombre' (crea el archivo rutas) --> junto con el inicio
+· creando un app.routing.ts colgando de /app con el snippets ag-routes
+
+EJECUTAR PROYECTO
+· npm start (ng serve --preserve-symlinks)

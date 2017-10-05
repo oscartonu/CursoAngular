@@ -1,0 +1,13 @@
+<p>
+  Tema de Libros
+</p>
+<p>
+  <input type="text" [(ngModel)]="claveLibro">
+</p>
+<button (click)="buscaLibros()">Buscar</button>
+<div *ngIf="arrayLibros"> 
+  <h2>Lista Libros</h2> 
+  <ul>
+    <li *ngFor="let itLibro of arrayLibros">{{itLibro}}</li>
+  </ul>    
+</div>
